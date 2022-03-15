@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./Tabs.css";
 
 const Tabs = ({ showAll, showBookmarked, data }) => {
   const [bottom, setBottom] = useState("");

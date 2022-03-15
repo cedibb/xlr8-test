@@ -1,0 +1,40 @@
+.image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  height: 300px;
+  margin: 10px;
+  position: relative;
+  min-width: 272px;
+}
+
+.image.hidden {
+  display: none;
+}
+
+.info {
+  align-items: center;
+  background: rgb(0, 0, 0, 0.5);
+  bottom: 0;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  position: absolute;
+  width: 100%;
+}
+
+.info.highlighted {
+  color: cornflowerblue;
+}
+
+.truncate {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  display: -webkit-box !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  width: 150px;
+}

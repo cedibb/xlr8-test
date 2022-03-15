@@ -1,4 +1,5 @@
-import Image from "./Image";
+import Image from ".././Image";
+import "./Gallery.css";
 
 const Gallery = ({ children, bookmark }) => (
   <div className="container">
