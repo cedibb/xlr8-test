@@ -1,5 +1,3 @@
-import React from "react";
-
 const Image = ({ data, bookmark }) => {
   const { image_id, title, url, bookmarked, visible } = data;
   return (

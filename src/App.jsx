@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import Gallery from "./Gallery";
-import Tabs from "./Tabs";
-import getImages from "../getImages";
+import { useState } from "react";
+import Gallery from "./components/Gallery";
+import Tabs from "./components/Tabs";
+import getImages from "./getImages";
 
 const img = getImages().map((img) => ({
   ...img,
@@ -47,7 +47,7 @@ const App = () => {
         showAll={handleShowAll}
         showBookmarked={handleShowBookmarked}
       />
-      <Gallery images={images} bookmark={handleBookmark} />
+      <Gallery bookmark={handleBookmark}>{images}</Gallery>
     </div>
   );
 };
