@@ -1,12 +1,11 @@
-import Image from ".././Image";
-import "./Gallery.css";
+import Image from "../Image";
 
-const Gallery = ({ children, bookmark }) => (
-  <div className="container">
-    {children.map((data, i) => (
-      <Image data={data} bookmark={bookmark} key={i} />
-    ))}
-  </div>
-);
+const Gallery = ({ children, bookmarkImage }) => {
+  const imageComponents = children.map((data, i) => (
+    <Image data={data} bookmark={bookmarkImage} key={i} />
+  ));
+
+  return <div className="container">{imageComponents}</div>;
+};
 
 export default Gallery;
